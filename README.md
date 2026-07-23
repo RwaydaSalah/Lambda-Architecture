@@ -62,14 +62,15 @@ GitHub account
 
 Created an S3 bucket for Terraform state storage:
 aws s3api create-bucket \
-  --bucket mahmoud011-terraform-tfstate-bucket \
+  --bucket rwayda0-terraform-tfstate-bucket \
   --region us-east-1
 
 Enable versioning:
 
 aws s3api put-bucket-versioning \
-  --bucket mahmoud011-terraform-tfstate-bucket \
+  --bucket rwayda0-terraform-tfstate-bucket \
   --versioning-configuration Status=Enabled
+
 📌 Usage Instructions
 Upload Images
 
@@ -77,7 +78,7 @@ Upload to: uploads/ folder in the original S3 bucket
 
 Example:
 
-my-original-images-mahmoudh20/uploads/sample.jpg
+my-original-images-rwayda36/uploads/sample.jpg
 
 Retrieve Processed Images
 
@@ -90,6 +91,7 @@ processed/imagename_320px.jpg
 processed/imagename_640px.jpg
 
 processed/imagename_1024px.jpg
+
 Customize Processing
 
 Update image_sizes in terraform.tfvars
